@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+background-image: url("background2.jpg");
+background-size: cover;
+}
+
+h1 {
+color: red;
+font-size: 38px;
+}
+
+table { 
+border-collapse: collapse;
+width: 95%;
+
+}
+
+thead {
+text-align: left;
+}
+
+tbody {
+border:2.5px solid black;
+}
+
+tbody tr:nth-child(2n+1) {
+  background-color: #24f23c;
+
+}
+tbody tr:nth-child(2n) {
+  background-color: #fad43c;
+}
+
+a {
+  background-color: beige;
+  border-radius:5px;
+  //box-shadow: 0 5px 0 darkred;
+  color: #666667;
+  padding: 2px 3px 2px 3px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: #ce0606;
+  cursor: pointer;
+}
+
+a:active {
+  box-shadow: none;
+  top: 2px;
+}
+
+p {
+font-size: 20px;
+padding: 10px;
+margin: 0px;
+width:60%;
+}
+
+#newfruit {
+  padding: 10px 30px 10px 30px;
+  background-color:red;
+  color: white;
+}
+
+#newfruit:hover {
+  background-color: #ce0606;
+  cursor: pointer;
+}
+
